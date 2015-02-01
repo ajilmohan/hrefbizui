@@ -5,7 +5,7 @@ angular.module('bizreport').config(function( $routeProvider) {
 
 	
 
-	$routeProvider.when('/dashboard', {
+	$routeProvider.when('/dashboard', { 
 		templateUrl: 'partials/dashboard.html'
 	})
 
@@ -15,7 +15,7 @@ angular.module('bizreport').config(function( $routeProvider) {
 	
 
 
-	$routeProvider.otherwise({
+	$routeProvider.otherwise({ 
 		templateUrl: 'partials/login.html'
 	})
 

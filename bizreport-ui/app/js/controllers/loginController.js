@@ -38,7 +38,7 @@ angular.module('bizcontroller')
 			
 			console.log("Name : "+user.name);
 			console.log("Pwd : "+user.password);
-
+			$rootScope.showmenu = true;
 			loginService.doLogin(function(user){
 			
 				$scope.user = user;
