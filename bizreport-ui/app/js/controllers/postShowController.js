@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 angular.module('bizcontroller')
 	.controller('postShowController', function($scope, uiConfig, commonService,  postShowService, $location, $rootScope , $interval) {
 		

@@ -1,0 +1,34 @@
+{
+	"id": "0001",
+	"type": "donut",
+	"name": "Cake",
+	"ppu": 0.55,
+	"cinema":
+		{
+			"shows":
+				[
+					{ "time": "9AM", "type": "Regular"  , "selected" : false},
+					{ "time": "10 AM", "type": "Regular" , "selected" : false },
+					{ "time": "11 AM", "type": "Regular" , "selected" : false },
+					{ "time": "12 AM", "type": "Regular" , "selected" : false },
+					{ "time": "1 PM", "type": "Regular"  , "selected" : false},
+					{ "time": "2 PM", "type": "Regular" , "selected" : false},
+					{ "time": "3 PM", "type": "Regular" , "selected" : false},
+					{ "time": "4 PM", "type": "Regular" , "selected" : false},
+					{ "time": "5 PM", "type": "Regular" , "selected" : false},
+					{ "time": "6 PM", "type": "Regular" , "selected" : false },
+					{ "time": "7 PM", "type": "Regular" , "selected" : false },
+					{ "time": "8 PM", "type": "Regular" , "selected" : false },
+					{ "time": "9 PM", "type": "Regular" , "selected" : false}
+				]
+		},
+	"classes":
+		[
+			{ "rate": "250", "type": "Diamond Class" },
+			{ "id": "200", "type": "Golden Class" },
+			{ "id": "150", "type": "Silver Class" },
+			{ "id": "150", "type": "Balcony" },
+			{ "id": "100", "type": "First Class" },
+			{ "id": "70", "type": "Second Class" }
+		]
+}

@@ -12,6 +12,10 @@ angular.module('bizreport').config(function( $routeProvider) {
 	$routeProvider.when('/postshow', {
 		templateUrl: 'partials/postshow.html'
 	})
+
+	$routeProvider.when('/settings', {
+		templateUrl: 'partials/settings.html'
+	})
 	
 
 
