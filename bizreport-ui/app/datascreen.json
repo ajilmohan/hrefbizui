@@ -1,0 +1,47 @@
+
+{
+	
+	"screens" : 
+					[
+						{
+							"name" : "Screen-1",
+							"shows" : [
+								{ "time": "9AM", "type": "Regular"  , "selected" : false},
+								{ "time": "10 AM", "type": "Regular" , "selected" : false },
+								{ "time": "11 AM", "type": "Regular" , "selected" : false }
+							],
+							"classes" : [
+								{ "rate": "250", "type": "Diamond Class" },
+								{ "rate": "200", "type": "Golden Class" },
+								{ "rate": "150", "type": "Silver Class" }
+							]
+						},
+						{
+							"name" : "Screen-2",
+							"shows" : [
+								{ "time": "9AM", "type": "Regular"  , "selected" : false},
+								{ "time": "10 AM", "type": "Regular" , "selected" : false },
+								{ "time": "11 AM", "type": "Regular" , "selected" : false }
+							],
+							"classes" : [
+								{ "rate": "250", "type": "Diamond Class" },
+								{ "rate": "200", "type": "Golden Class" },
+								{ "rate": "150", "type": "Silver Class" }
+							]
+						},
+						{
+							"name" : "Screen-3",
+							"shows" : [
+								{ "time": "9AM", "type": "Regular"  , "selected" : false},
+								{ "time": "10 AM", "type": "Regular" , "selected" : false },
+								{ "time": "11 AM", "type": "Regular" , "selected" : false }
+							],
+							"classes" : [
+								{ "rate": "250", "type": "Diamond Class" },
+								{ "rate": "200", "type": "Golden Class" },
+								{ "rate": "150", "type": "Silver Class" }
+							]
+						}
+
+					]
+}

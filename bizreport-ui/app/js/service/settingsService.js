@@ -16,6 +16,14 @@ angular.module('bizservice')
 					callback(data);
 				});
 				
+			},
+
+			getScreensOfCinema: function(callback){ debugger;
+
+				var resp = $http.get('./datascreen.json').success(function(data) {
+					
+					callback(data);
+				});
 			}
 
 		}

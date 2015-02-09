@@ -25,10 +25,11 @@
 	"classes":
 		[
 			{ "rate": "250", "type": "Diamond Class" },
-			{ "id": "200", "type": "Golden Class" },
-			{ "id": "150", "type": "Silver Class" },
-			{ "id": "150", "type": "Balcony" },
-			{ "id": "100", "type": "First Class" },
-			{ "id": "70", "type": "Second Class" }
+			{ "rate": "200", "type": "Golden Class" },
+			{ "rate": "150", "type": "Silver Class" },
+			{ "rate": "150", "type": "Balcony" },
+			{ "rate": "100", "type": "First Class" },
+			{ "rate": "70", "type": "Second Class" }
 		]
+
 }

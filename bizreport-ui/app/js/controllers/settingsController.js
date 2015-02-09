@@ -6,20 +6,38 @@ angular.module('bizcontroller')
 		
 		$scope.init = function(){
 			
+			$scope.oneAtATime = true;
 			$scope.cinema  = commonService.getCinema();
 			$scope.screen = {};
 			$scope.screen.shows = [];
 			$scope.screen.classes = [];
+
+			$scope.screens = [];
+
+			$scope.selectedScreen = {};
 			
 
 			settingsService.getSettingsMasterData(function(data){
-					debugger;
+					
 					$scope.shows = data.cinema.shows;
 					$scope.classes = data.classes;
 					//console.log('Data : ' +$scope.shows )
 					
 			});
 
+			settingsService.getScreensOfCinema(function(data1){
+					$scope.screens = data1.screens;
+					
+			});
+
+		}
+
+
+		$scope.getSelectedScreenDet = function(screen){
+			debugger;
+
+			$scope.showsOfScreen = screen.shows;
+			$scope.classesOfScreen = screen.classes;
 		}
 
 

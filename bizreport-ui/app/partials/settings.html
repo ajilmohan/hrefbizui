@@ -11,69 +11,110 @@
             </div>
         </div>
 
+        <accordion close-others="oneAtATime">
+
+        <accordion-group heading="Setup Screens of {{cinema.orgName}}" >
+    
         <!-- /.row -->
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-heading">
+					<!-- <div class="panel-heading">
 		                     <h3 class="panel-title">
 		                     <i class="fa fa-bar-chart-o fa-fw"></i>Setup Screens of {{cinema.orgName}}</h3>
-		            </div>
+		            </div> -->
 		             <div class="panel-body">
 
 		             	 <!-- /.row -->
 						 <div class="row">
 
-						 	<label class="col-sm-2 text-right">Screen </label>
+						 	<span class="col-sm-2 text-right">Screen </span>
 						    <div class="col-sm-2">
 						      <input type="text"  ng-model="screen.name" class="form-control"  placeholder="Screen Name" />
 						    </div>
 
-						     <!-- <div class="col-sm-2 text-right">
-						            Shows
-						     </div>
-						    <div class="col-sm-2">
-								<select ng-model="screen" class="form-control"  ng-options="show as show.time for show in shows"></select>
-						    </div> -->
-
 						 </div>
+
 
 
 						 <!-- /.row -->
 						 <div class="row">
-						 		<label class="col-sm-2 text-right">Classes </label>
-						 </div>
-
-						 <!-- /.row -->
-						 <div class="row">
-						 		<span  class="col-sm-2" ></span>
+						 		<span  class="col-sm-2 text-right" >Classes</span>
 						 		<span  ng-repeat="class in classes " style="width:2px" > 
 						 			{{class.type}}
 						 			<input  type="checkbox" value="{{class.type}}"  ng-change="addClass(class,selected)" ng-model='selected' /> 
 						 		</span>
 						 </div>
 
-						 <!-- /.row -->
-						 <div class="row">
-						 		<label class="col-sm-2 text-right">Shows </label>
-						 </div>
+						
 
 						 <!-- /.row -->
 						 <div class="row">
-						 		<span  class="col-sm-2" ></span>
+						 		<span  class="col-sm-2 text-right" >Shows</span>
 						 		<span  ng-repeat="show in shows " style="width:2px" > 
 						 			{{show.time}}
 						 			<input  type="checkbox" value="{{show.time}}"  ng-change="addShow(show,selected)" ng-model='selected' /> 
 						 		</span>
 						 </div>
 
+
 		             </div>
 				</div>
 			</div>
 		</div>
 
-		
+		</accordion-group>
 
+		<accordion-group heading="Edit Screens of {{cinema.orgName}}" >
+
+		 <!-- /.row -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<!-- <div class="panel-heading">
+		                     <h3 class="panel-title">
+		                     <i class="fa fa-bar-chart-o fa-fw"></i>Edit Screens of {{cinema.orgName}}</h3>
+		            </div> -->
+		             <div class="panel-body">
+
+		             	  <!-- /.row -->
+						 <div class="row">
+
+						 <span  class="col-sm-2 text-right" >Select Screen  </span>
+						    <div class="col-sm-2">
+						      <select ng-model="selectedScreen" class="form-control" ng-options="screen as screen.name for screen in screens"   ng-change="getSelectedScreenDet(selectedScreen)" ></select>
+						    </div>
+
+						 </div>
+
+						 <!-- /.row -->
+						 <div class="row">
+						 		<span  class="col-sm-2 text-right" >Classes </span>
+						 		<span  ng-repeat="class in classesOfScreen " style="width:2px" > 
+						 			{{class.type}}
+						 			<input  type="checkbox" value="{{class.type}}"  ng-change="addClass(class,selected)" ng-model='selected' /> 
+						 		</span>
+
+						 </div>
+
+
+						 <!-- /111.row -->
+						 <div class="row">
+						 		<span  class="col-sm-2 text-right" >Shows</span>
+						 		<span  ng-repeat="show in showsOfScreen " style="width:2px" > 
+						 			{{show.time}}
+						 			<input  type="checkbox" value="{{show.time}}"  ng-change="addShow(show,selected)" ng-model='selected' /> 
+						 		</span>
+
+						 </div>
+					 
+					 </div>
+				</div>
+			</div>
+		</div>
+
+	  </accordion-group>
+	</accordion>
 
 
 
