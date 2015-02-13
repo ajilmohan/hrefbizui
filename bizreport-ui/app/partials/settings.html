@@ -92,7 +92,7 @@
 						 		<span  class="col-sm-2 text-right" >Classes </span>
 						 		<span  ng-repeat="class in classesOfScreen " style="width:2px" > 
 						 			{{class.type}}
-						 			<input  type="checkbox" value="{{class.type}}"  ng-change="addClass(class,selected)" ng-model='selected' /> 
+						 			<input  type="checkbox" value="{{class.type}}" ng-checked="{{class.selected}}" ng-change="addClass(class,selected)" ng-model='selected' /> 
 						 		</span>
 
 						 </div>
@@ -103,7 +103,7 @@
 						 		<span  class="col-sm-2 text-right" >Shows</span>
 						 		<span  ng-repeat="show in showsOfScreen " style="width:2px" > 
 						 			{{show.time}}
-						 			<input  type="checkbox" value="{{show.time}}"  ng-change="addShow(show,selected)" ng-model='selected' /> 
+						 			<input  type="checkbox" value="{{show.time}}" ng-checked="{{show.selected}}"  ng-change="addShow(show,selected)" ng-model='selected' /> 
 						 		</span>
 
 						 </div>
@@ -115,6 +115,7 @@
 
 	  </accordion-group>
 	</accordion>
+</div>
 
 
 

@@ -8,38 +8,77 @@
 							"shows" : [
 								{ "time": "9AM", "type": "Regular"  , "selected" : false},
 								{ "time": "10 AM", "type": "Regular" , "selected" : false },
-								{ "time": "11 AM", "type": "Regular" , "selected" : false }
+								{ "time": "11 AM", "type": "Regular" , "selected" : false },
+								{ "time": "12 AM", "type": "Regular" , "selected" : true },
+								{ "time": "1 PM", "type": "Regular"  , "selected" : false},
+								{ "time": "2 PM", "type": "Regular" , "selected" : true},
+								{ "time": "3 PM", "type": "Regular" , "selected" : false},
+								{ "time": "4 PM", "type": "Regular" , "selected" : false},
+								{ "time": "5 PM", "type": "Regular" , "selected" : false},
+								{ "time": "6 PM", "type": "Regular" , "selected" : false },
+								{ "time": "7 PM", "type": "Regular" , "selected" : false },
+								{ "time": "8 PM", "type": "Regular" , "selected" : false },
+								{ "time": "9 PM", "type": "Regular" , "selected" : false}
 							],
 							"classes" : [
-								{ "rate": "250", "type": "Diamond Class" },
-								{ "rate": "200", "type": "Golden Class" },
-								{ "rate": "150", "type": "Silver Class" }
+								{ "rate": "250", "type": "Diamond Class" , "selected" : true},
+								{ "rate": "200", "type": "Golden Class" , "selected" : false},
+								{ "rate": "150", "type": "Silver Class" , "selected" : true},
+								{ "rate": "150", "type": "Balcony" , "selected" : false},
+								{ "rate": "100", "type": "First Class" , "selected" : false},
+								{ "rate": "70", "type": "Second Class" , "selected" : false}
 							]
 						},
 						{
 							"name" : "Screen-2",
 							"shows" : [
-								{ "time": "9AM", "type": "Regular"  , "selected" : false},
+								{ "time": "9AM", "type": "Regular"  , "selected" : true},
 								{ "time": "10 AM", "type": "Regular" , "selected" : false },
-								{ "time": "11 AM", "type": "Regular" , "selected" : false }
+								{ "time": "11 AM", "type": "Regular" , "selected" : false },
+								{ "time": "12 AM", "type": "Regular" , "selected" : false },
+								{ "time": "1 PM", "type": "Regular"  , "selected" : false},
+								{ "time": "2 PM", "type": "Regular" , "selected" : false},
+								{ "time": "3 PM", "type": "Regular" , "selected" : true},
+								{ "time": "4 PM", "type": "Regular" , "selected" : false},
+								{ "time": "5 PM", "type": "Regular" , "selected" : false},
+								{ "time": "6 PM", "type": "Regular" , "selected" : false },
+								{ "time": "7 PM", "type": "Regular" , "selected" : false },
+								{ "time": "8 PM", "type": "Regular" , "selected" : false },
+								{ "time": "9 PM", "type": "Regular" , "selected" : false}
 							],
 							"classes" : [
-								{ "rate": "250", "type": "Diamond Class" },
-								{ "rate": "200", "type": "Golden Class" },
-								{ "rate": "150", "type": "Silver Class" }
+								{ "rate": "250", "type": "Diamond Class" , "selected" : false},
+								{ "rate": "200", "type": "Golden Class" , "selected" : false},
+								{ "rate": "150", "type": "Silver Class" , "selected" : false},
+								{ "rate": "150", "type": "Balcony" , "selected" : false},
+								{ "rate": "100", "type": "First Class" , "selected" : false},
+								{ "rate": "70", "type": "Second Class" , "selected" : false}
 							]
 						},
 						{
-							"name" : "Screen-3",
+							"name" : "Screen-3", 
 							"shows" : [
 								{ "time": "9AM", "type": "Regular"  , "selected" : false},
 								{ "time": "10 AM", "type": "Regular" , "selected" : false },
-								{ "time": "11 AM", "type": "Regular" , "selected" : false }
+								{ "time": "11 AM", "type": "Regular" , "selected" : false },
+								{ "time": "12 AM", "type": "Regular" , "selected" : false },
+								{ "time": "1 PM", "type": "Regular"  , "selected" : false},
+								{ "time": "2 PM", "type": "Regular" , "selected" : false},
+								{ "time": "3 PM", "type": "Regular" , "selected" : false},
+								{ "time": "4 PM", "type": "Regular" , "selected" : false},
+								{ "time": "5 PM", "type": "Regular" , "selected" : false},
+								{ "time": "6 PM", "type": "Regular" , "selected" : false },
+								{ "time": "7 PM", "type": "Regular" , "selected" : false },
+								{ "time": "8 PM", "type": "Regular" , "selected" : false },
+								{ "time": "9 PM", "type": "Regular" , "selected" : false}
 							],
 							"classes" : [
-								{ "rate": "250", "type": "Diamond Class" },
-								{ "rate": "200", "type": "Golden Class" },
-								{ "rate": "150", "type": "Silver Class" }
+								{ "rate": "250", "type": "Diamond Class" , "selected" : false},
+								{ "rate": "200", "type": "Golden Class" , "selected" : false},
+								{ "rate": "150", "type": "Silver Class" , "selected" : false},
+								{ "rate": "150", "type": "Balcony" , "selected" : false},
+								{ "rate": "100", "type": "First Class" , "selected" : false},
+								{ "rate": "70", "type": "Second Class" , "selected" : false}
 							]
 						}
 
