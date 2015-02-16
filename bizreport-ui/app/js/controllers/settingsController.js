@@ -13,15 +13,28 @@ angular.module('bizcontroller')
 			$scope.screen.classes = [];
 
 			$scope.screens = [];
-
+			$scope.movies = [];
 			$scope.selectedScreen = {};
 			
+			$scope.selectedMovie = {};
+			
+			$scope.dateOptions = {
+						        changeYear: true,
+						        changeMonth: true,
+						        yearRange: '1900:-0'
+						    };	
 
 			settingsService.getSettingsMasterData(function(data){
 					
 					$scope.shows = data.cinema.shows;
 					$scope.classes = data.classes;
 					//console.log('Data : ' +$scope.shows )
+					
+			});
+
+
+			settingsService.getMovies(function(data1){
+					$scope.movies = data1.movies;
 					
 			});
 
@@ -34,7 +47,7 @@ angular.module('bizcontroller')
 
 
 		$scope.getSelectedScreenDet = function(screen){
-			debugger;
+			
 
 			$scope.showsOfScreen = screen.shows;
 			$scope.classesOfScreen = screen.classes;
@@ -53,13 +66,20 @@ angular.module('bizcontroller')
 		}
 
 		$scope.addClass = function(sclass , selected){
-			debugger;
+			
 			if(selected){
 				$scope.screen.classes.push(sclass);
 			}else{
 				var index = $scope.screen.classes.indexOf(sclass)
   				$scope.screen.classes.splice(index, 1); 
 			}
+		}
+
+		$scope.getSelectedMovieDet = function(movie){
+			
+
+			$scope.showsOfScreen = movie.startdate;
+			$scope.classesOfScreen = movie.enddate;
 		}
 
 		$scope.init();

@@ -1,0 +1,22 @@
+{
+	
+	"movies" : 
+					[
+						{
+							"name" : "Movie-1",
+							"startdate" : "2015-February-20",
+							"enddate" : "2015-March-7"
+						},
+						{
+							"name" : "Movie-2",
+							"startdate": "2015-February-20",
+							"enddate" : "2015-March-7"
+						},
+						{
+							"name" : "Screen-3", 
+							"startdate" : "",
+							"enddate" : ""
+						}
+
+					]
+}

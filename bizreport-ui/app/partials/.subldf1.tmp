@@ -123,11 +123,16 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
-					<div class="panel-body">
+					<!-- <div class="panel-heading">
+		                     <h3 class="panel-title">
+		                     <i class="fa fa-bar-chart-o fa-fw"></i>Edit Screens of {{cinema.orgName}}</h3>
+		            </div> -->
+		             <div class="panel-body">
 
 		             	  <!-- /.row -->
 						 <div class="row">
 
+						 
 						    
 						    <span  class="col-sm-2 text-right" >Movie Name :</span>
 						    <div class="col-sm-5">
@@ -139,9 +144,12 @@
 						 <div class="row">
 						 		<span  class="col-sm-2 text-right" >Start Date : </span>
 						 		<div class="col-sm-3">
-									<ng-bs3-datepicker id="date1" data-ng-model='date1' language="en" date-format="YYYY-MMMM-DD"/>
-								</div>
-						 		
+													<ng-bs3-datepicker id="date1" data-ng-model='date1' language="en" date-format="YYYY-MMMM-DD"/>
+											    </div>
+						 		<span  ng-repeat="class in classesOfScreen " style="width:2px" > 
+						 			{{class.type}}
+						 			<input  type="checkbox" value="{{class.type}}" ng-checked="{{class.selected}}" ng-change="addClass(class,selected)" ng-model='selected' /> 
+						 		</span>
 
 						 </div>
 
@@ -149,10 +157,10 @@
 						 <!-- /111.row -->
 						 <div class="row">
 						 		<span  class="col-sm-2 text-right" >End Date : </span>
-						 		<div class="col-sm-3">
-									<ng-bs3-datepicker id="date2" data-ng-model='date1' language="en" date-format="YYYY-MMMM-DD"/>
-								</div>
-						 		
+						 		<span  ng-repeat="show in showsOfScreen " style="width:2px" > 
+						 			{{show.time}}
+						 			<input  type="checkbox" value="{{show.time}}" ng-checked="{{show.selected}}"  ng-change="addShow(show,selected)" ng-model='selected' /> 
+						 		</span>
 
 						 </div>
 					 
@@ -162,54 +170,6 @@
 		</div>
 
 	  </accordion-group>
-
-	  <accordion-group heading="Edit Movies for {{cinema.orgName}}" >
-
-		 <!-- /.row -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="panel panel-default">
-					<div class="panel-body">
-
-		             	  <!-- /.row -->
-						 <div class="row">
-
-						    
-						    <span  class="col-sm-2 text-right" >Select Movie  </span>
-						    <div class="col-sm-2">
-						      <select ng-model="selectedMovie" class="form-control" ng-options="movie as movie.name for movie in movies"   ng-change="getSelectedMovieDet(selectedMovie)" ></select>
-						    </div>
-						 </div>
-
-						 
-						  <div class="row">
-						 		<span  class="col-sm-2 text-right" >Start Date : </span>
-						 		<div class="col-sm-3">
-									<ng-bs3-datepicker id="date1" data-ng-model='date1' language="en" date-format="YYYY-MMMM-DD"/>
-								</div>
-						 		
-
-						 </div> 
-
-
-						 
-						<div class="row">
-						 		<span  class="col-sm-2 text-right" >End Date : </span>
-						 		<div class="col-sm-3">
-									<ng-bs3-datepicker id="date2" data-ng-model='date1' language="en" date-format="YYYY-MMMM-DD"/>
-								</div>
-						 		
-
-						 </div> 
-					 
-					 </div>
-				</div>
-			</div>
-		</div>
-
-	  </accordion-group>
-
-
 	</accordion>
 
 

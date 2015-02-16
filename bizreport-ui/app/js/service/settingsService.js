@@ -18,9 +18,17 @@ angular.module('bizservice')
 				
 			},
 
-			getScreensOfCinema: function(callback){ debugger;
+			getScreensOfCinema: function(callback){ 
 
 				var resp = $http.get('./datascreen.json').success(function(data) {
+					
+					callback(data);
+				});
+			},
+
+			getMovies: function(callback){
+
+				var resp = $http.get('./datamovie.txt').success(function(data) {
 					
 					callback(data);
 				});
