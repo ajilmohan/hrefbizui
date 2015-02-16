@@ -15,7 +15,7 @@
 						{
 							"name" : "Screen-3", 
 							"startdate" : "",
-							"enddate" : ""
+							"enddate" : "2015-March-7"
 						}
 
 					]
