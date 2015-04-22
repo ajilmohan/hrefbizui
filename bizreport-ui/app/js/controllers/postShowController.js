@@ -1,26 +1,51 @@
 
 
 angular.module('bizcontroller')
-	.controller('postShowController', function($scope, uiConfig, commonService,  postShowService, $location, $rootScope , $interval) {
+	.controller('postShowController', function($scope, uiConfig, commonService,  postShowService, $location, 
+		$rootScope , $interval , cinemaService) {
 		
-		$scope.showsToBePost = {};
-		$scope.cinema = commonService.getCinema();
-		$scope.screensToProces = $scope.cinema.screens;
-		$scope.selectedScreen = {};
-		$scope.filmsOnScreen = {};
-		$scope.dateOptions = {
+		/***
+		 * Invoke on initial call of the view or refresh event.
+		 * Code has to taken care of refresh event. After refresh , all 
+		 * values has to come back on initial state.
+		 */
+
+		$scope.init = function(){ 
+			
+			// Get the selected cinema.
+			$scope.cinema = commonService.getCinema();
+			$scope.showsToBePost = {};
+			
+			//Gathered screens of selected cinema.
+			cinemaService.getScreensOfCinema(function(screens){
+					$scope.screensToProces =  screens;
+					
+			},1);
+		
+			
+			$scope.selectedScreen = {};
+			$scope.filmsOnScreen = {};
+			$scope.dateOptions = {
 						        changeYear: true,
 						        changeMonth: true,
 						        yearRange: '1900:-0'
 						    };
 
+		}
+
+
+
+		$scope.init();
+
+		
+
 		$scope.getShows = function(screen) {
-				
-				postShowService.getShows(function(shows){
+			
+				cinemaService.getShowsOfScreen(function(shows){
 					$scope.shows = shows;
 					$scope.filmsOnScreen  = screen.films;
 
-				});
+				},screen.id);
 		}
 
 
