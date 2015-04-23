@@ -57,14 +57,17 @@
 						                    			Shows
 						                    	</div>
 											    <div class="col-sm-2">
-													<select ng-model="show" class="form-control" ng-change="populatePostShowForm(show)" ng-options="show as show.dicnShow.name for show in shows"></select>
+													<select ng-model="show" class="form-control" ng-change="populateMovieForTheShow(show)" ng-options="show as show.dicnShow.name for show in shows"></select>
 											    </div>
 
 											    <div class="col-sm-2 text-right">
 						                    			Film
 						                    	</div>
 											    <div class="col-sm-2">
-													<select ng-model="selectedFilm" class="form-control"  ng-options="film as film.name for film in filmsOnScreen"></select>
+												 <!--	<select ng-model="selectedFilm" class="form-control"  ng-options="film as film.name for film in filmsOnScreen"></select> -->
+
+												 {{movie.name}}
+
 											    </div>
 
 						                    </div>

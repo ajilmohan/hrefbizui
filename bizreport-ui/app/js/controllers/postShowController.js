@@ -43,13 +43,22 @@ angular.module('bizcontroller')
 			
 				cinemaService.getShowsOfScreen(function(shows){
 					$scope.shows = shows;
-					$scope.filmsOnScreen  = screen.films;
+					//$scope.filmsOnScreen  = screen.films;
 
 				},screen.id);
 		}
 
 
+		$scope.populateMovieForTheShow = function(show){
+				debugger;
+				$scope.movie =  show.movie;
+				this.populatePostShowForm(show);
+
+		}
+
+
 		$scope.populatePostShowForm = function(show){
+				debugger;
 				/*postShowService.getShow(function(show){
 					
 					$scope.show = show;
